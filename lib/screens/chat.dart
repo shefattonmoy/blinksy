@@ -10,15 +10,18 @@ class ChatScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Blinksy'),
         actions: [
-          IconButton(onPressed: () {
-            FirebaseAuth.instance.signOut();
-          }, icon: Icon(Icons.exit_to_app, color: Theme.of(context).colorScheme.primary,))
+          IconButton(
+            onPressed: () {
+              FirebaseAuth.instance.signOut();
+            },
+            icon: Icon(
+              Icons.exit_to_app,
+              color: Theme.of(context).colorScheme.primary,
+            ),
+          ),
         ],
       ),
-      body: const Center(
-        child: Text('Log in'),
-      ),
+      body: const Center(child: Text('Log in')),
     );
   }
 }
-

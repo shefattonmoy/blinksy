@@ -46,9 +46,7 @@ class _AuthScreenState extends State<AuthScreen> {
       }
       ScaffoldMessenger.of(context).clearSnackBars();
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(error.message ?? 'Authentication failed.'),
-        ),
+        SnackBar(content: Text(error.message ?? 'Authentication failed.')),
       );
     }
   }
@@ -120,9 +118,9 @@ class _AuthScreenState extends State<AuthScreen> {
                           ElevatedButton(
                             onPressed: _submit,
                             style: ElevatedButton.styleFrom(
-                              backgroundColor: Theme.of(context)
-                                  .colorScheme
-                                  .primaryContainer,
+                              backgroundColor: Theme.of(
+                                context,
+                              ).colorScheme.primaryContainer,
                             ),
                             child: Text(_isLogin ? 'Login' : 'Sign Up'),
                           ),
