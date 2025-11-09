@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "800670612727",
+    "project_id": "blinksy-dd52f",
+    "storage_bucket": "blinksy-dd52f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800670612727:android:1ceeeb3558a0389d7c27f2",
+        "android_client_info": {
+          "package_name": "com.example.blinksy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnvc-gOZao815m21-Tz-CTpw2tLtG7PqY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
