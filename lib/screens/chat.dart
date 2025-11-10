@@ -12,7 +12,6 @@ class ChatScreen extends StatefulWidget {
 }
 
 class _ChatScreenState extends State<ChatScreen> {
-
   void setupPushNotification() async {
     final firebaseMessagingObject = FirebaseMessaging.instance;
 
