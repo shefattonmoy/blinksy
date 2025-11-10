@@ -18,7 +18,6 @@ class AuthScreen extends StatefulWidget {
 
 class _AuthScreenState extends State<AuthScreen> {
   final _form = GlobalKey<FormState>();
-
   var _isLogin = true;
   var _enteredEmail = '';
   var _enteredUsername = '';
@@ -39,6 +38,7 @@ class _AuthScreenState extends State<AuthScreen> {
       setState(() {
         _isAuthenticating = true;
       });
+
       if (_isLogin) {
         final userCredentials = await _firebase.signInWithEmailAndPassword(
           email: _enteredEmail,
@@ -56,7 +56,6 @@ class _AuthScreenState extends State<AuthScreen> {
             .child('${userCredentials.user!.uid}.jpg');
         await storageRef.putFile(_selectedImage!);
         final imageUrl = await storageRef.getDownloadURL();
-
         await FirebaseFirestore.instance
             .collection('users')
             .doc(userCredentials.user!.uid)
